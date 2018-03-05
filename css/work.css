@@ -1,0 +1,43 @@
+.card {
+     border: 0;
+     border-radius: 0.25rem;
+     position: relative;
+     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+ }
+
+ .card-body {
+     background-color: #f8f9fa;
+     border-bottom-left-radius: calc(.25rem - 1px);
+     border-bottom-right-radius: calc(.25rem - 1px);
+ }
+
+ .item a {
+     text-decoration: none;
+ }
+
+ a .card {
+     color: #333;
+ }
+
+ a:hover .card {
+     transform: translateY(-8px);
+     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+ }
+
+ p.card-text {
+     font-size: 0.9rem;
+ }
+
+ .work-title h5,
+ .work-title span {
+     display: inline;
+ }
+
+ .work-title span {
+     font-size: 0.9rem;
+     float: right;
+ }
+
+ .owl-dots {
+     display: block;
+ }

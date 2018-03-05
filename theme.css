@@ -1,0 +1,363 @@
+ /*
+   $font-family-sans-serif: // Safari for OS X and iOS (San Francisco)
+   -apple-system, // Chrome < 56 for OS X (San Francisco)
+   BlinkMacSystemFont, // Windows
+   "Segoe UI", // Android
+   "Roboto", // Basic web fallback
+   "Helvetica Neue",
+   Arial,
+   sans-serif, // Emoji fonts
+   "Apple Color Emoji",
+   "Segoe UI Emoji",
+   "Segoe UI Symbol" !default;
+
+*/
+
+ * {
+     font-family: 'Nunito', sans-serif;
+ }
+
+ .wrap {
+     overflow: hidden;
+     background-attachment: fixed;
+     background-position: center 40%;
+     background-size: 100%;
+     background-image: url('images/about-bg.jpg');
+ }
+
+ .header-carousel-item {
+     height: 450px;
+ }
+
+ .bg-cover {
+     background-size: cover;
+     background-position: center center;
+ }
+
+ @media (min-width:768px) {
+     .text-md-dark {
+         color: #333;
+     }
+ }
+
+ header {
+     background-size: 100% auto;
+     background-repeat: no-repeat;
+ }
+
+ .bg-main {
+     background-color: rgba(235, 150, 135, .95)
+ }
+
+ .bg-green {
+     background-color: #00A68C;
+ }
+
+ .text-grey {
+     color: #666;
+ }
+
+ .text-main,
+ a.text-main,
+ a.text-main:hover {
+     color: #EB9687;
+     text-decoration: none;
+ }
+
+ a.text-main:hover {
+     text-decoration: none;
+     opacity: 0.7;
+ }
+
+ .text-green {
+     color: #00A68C;
+ }
+
+ .text-white {
+     color: white!important;
+ }
+
+ .btn-outline-main {
+     color: #EB9687;
+     border: 1px solid #EB9687;
+ }
+
+ a.btn-outline-main:hover {
+     color: white;
+     background-color: #EB9687;
+     border: 1px solid #EB9687;
+ }
+
+ .profile-photo {
+     width: 150px;
+     height: 150px;
+     border-radius: 50%;
+     background-image: url('images/profile-photo.jpg');
+     background-size: cover;
+ }
+
+ img.img-hover:hover {
+     opacity: 0.8;
+ }
+
+ @media (min-width:768px) {
+     .img-w80 {
+         max-width: 80%;
+     }
+     .img-w70 {
+         max-width: 70%;
+     }
+     .img-w50 {
+         max-width: 50%;
+     }
+     .img-w40 {
+         max-width: 40%;
+     }
+     .img-w30 {
+         max-width: 30%;
+     }
+ }
+ /*experience*/
+
+ section#experience {
+     background-color: #fff;
+ }
+
+ section#experience h3.experience,
+ section#experience h3.skills {
+     color: #EB9687;
+     border-bottom: 1px solid #EB9687;
+ }
+
+ section#experience h3.education {
+     color: #00A68C;
+     border-bottom: 1px solid #00A68C;
+ }
+
+
+
+ .box,
+ .box-green {
+     width: 80px;
+     height: 80px;
+     border-radius: 50%;
+     margin-bottom: 50px;
+     position: relative;
+     background-position: center;
+ }
+
+ .box-green {
+     background-color: #00A68C;
+     background-position: 50% 30%;
+     background-size: 60%;
+     background-repeat: no-repeat;
+ }
+
+ .top {
+     width: 80px;
+     height: 80px;
+     border-radius: 50%;
+     background-color: rgba(235, 150, 135, .5);
+     position: absolute;
+     z-index: 1;
+ }
+
+ @media (max-width: 576px) {
+     .box,
+     .box-green {
+         width: 150px;
+         height: 100px;
+         border-radius: 5px;
+         margin: 5px 0 15px 0;
+         background-position: center;
+     }
+     .box-green {
+         background-size: 40%;
+         background-position: center 20%!important;
+     }
+     .top {
+         width: 100%;
+         height: 100%;
+         border-radius: 3px;
+     }
+ }
+
+ .timeline-section {
+     position: relative;
+ }
+
+ .timeline-section::after {
+     content: "";
+     position: absolute;
+     top: 0;
+     bottom: 0;
+     left: 50%;
+     width: 3px;
+     transform: translateX(-50%);
+ }
+
+ .timeline-section.experience::after {
+     background-color: #EB9687;
+ }
+
+ .timeline-section.education::after {
+     background-color: #00A68C;
+ }
+
+ .timeline-section p {
+     margin: -3px 0 0 0;
+ }
+
+ .timeline-section h5 {
+     margin: 0.3rem 0 0.3rem 0;
+ }
+
+ .timeline-pointer {
+     position: relative;
+ }
+
+ .timeline-pointer::after {
+     content: "";
+     position: absolute;
+     top: 0;
+     bottom: 0;
+     left: 50%;
+     width: 15px;
+     height: 15px;
+     transform: translateX(-50%);
+     border-radius: 50%;
+     border: 3px solid;
+     background-color: white;
+     z-index: 1;
+ }
+
+ .experience .timeline-pointer::after {
+     border: 3px solid #EB9687;
+ }
+
+ .education .timeline-pointer::after {
+     border: 3px solid #00A68C;
+ }
+
+
+ @media (max-width: 576px) {
+     .timeline-section::after,
+     .timeline-pointer::after {
+         display: none;
+     }
+ }
+ /*work
+
+ section#work .card {
+     border: 0;
+ }
+
+ .work-title h5,
+ .work-title span {
+     display: inline;
+ }
+
+ .work-title span {
+     font-size: 0.9rem;
+     float: right;
+ }
+
+ .card-body {
+     background-color: #f8f9fa;
+     border-bottom-left-radius: calc(.25rem - 1px);
+     border-bottom-right-radius: calc(.25rem - 1px);
+     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+ }
+
+ .card-deck a {
+     text-decoration: none;
+     color: #333;
+ }
+
+ .card-deck a:hover .card {
+     transform: translateY(-8px);
+     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+ }
+
+ p.card-text {
+     font-size: 0.9rem;
+ }
+*/
+
+ #goTop {
+     position: fixed;
+     width: 50px;
+     height: 50px;
+     border-radius: 50%;
+     right: 20px;
+     bottom: 50px;
+     padding: 2px 15px;
+     font-size: 1.8rem;
+     background-color: rgba(235, 150, 135, .5);
+     color: #fff;
+     cursor: pointer;
+     z-index: 1000;
+ }
+
+ #goTop a {
+     color: #fff;
+ }
+
+ #goTop a:hover {
+     text-decoration: none;
+ }
+
+ .breadcrumb {
+     background: transparent;
+ }
+
+ .bg-cover {
+     background-size: cover;
+     background-position: center center;
+ }
+
+ .photo-vh {
+     height: 100vh;
+ }
+
+ .photo-p {
+     height: 600px;
+ }
+
+ .navbar-dark .navbar-nav .nav-link.here {
+     color: rgba(235, 255, 255, .7);
+ }
+
+ #skills p {
+     margin-bottom: 0;
+ }
+
+ .progress {
+     height: 20px;
+     overflow: hidden;
+     background-color: rgba(0, 0, 0, .1);
+     border-radius: 3px;
+     position: relative;
+ }
+
+ .progress-bar {
+     position: absolute;
+     left: 0;
+     top: 0;
+     bottom: 0;
+     width: 0;
+     line-height: 20px;
+     color: rgba(0, 0, 0, 0);
+     background-color: #EB9687;
+     transition: width 3s ease;
+ }
+
+.animated {
+  opacity: 0;
+  transition: all 1.5s;
+  transform: translateY(50px);
+}
+.fadeIn {
+  opacity: 1;
+  transform: translateY(0);
+}
